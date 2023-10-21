@@ -12,7 +12,7 @@ Node.js v18.16.0 or later
 
 Installation
 1. Clone the repository
-git clone git@github.com:AlfredoFerreiras/HelpDesk.git \n
+git clone git@github.com:AlfredoFerreiras/HelpDesk.git || 
 cd helpdesk
 2. Install dependencies
 npm install
