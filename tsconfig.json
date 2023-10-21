@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "outDir": "./dist",
+        "rootDir": "./client",
+        "jsx": "react",
+        "allowJs": true,
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "client/**/*.ts",
+        "client/**/*.tsx",
+        "client/index.js"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "public",
+        "public/bundle.js",
+        "public/bundle.js.map",
+        "client/store/**/*",
+        "client/components/**/*"
+    ]
+}
