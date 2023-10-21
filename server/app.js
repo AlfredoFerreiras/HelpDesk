@@ -1,8 +1,28 @@
 const path = require("path");
 const express = require("express");
 const morgan = require("morgan");
+const helmet = require("helmet");
 const app = express();
+
 module.exports = app;
+
+const helmet = require("helmet");
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: [
+          "'self'",
+          "'wasm-unsafe-eval'",
+          "'inline-speculation-rules'",
+          "https://js.stripe.com",
+        ],
+      },
+    },
+  })
+);
 
 // logging middleware
 app.use(morgan("dev"));
