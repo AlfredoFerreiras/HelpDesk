@@ -7,12 +7,13 @@
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
     "seed": "node script/seed.js",
-    "start": "node server",
+    "start": "npm run db:build && node server/index.js --ignore dist/ --ignore src/ ",
     "start:dev": "npm run build:dev & npm run start-server",
     "start:dev:logger": "LOGGING=true npm run start:dev",
     "start:dev:seed": "SEED=true npm run start:dev",
     "start-server": "JWT=shh nodemon server -e html,js,scss --ignore public --ignore client",
-    "start-server:windows": "cross-env JWT=shh nodemon server -e html,js,scss --ignore public --ignore client"
+    "start-server:windows": "cross-env JWT=shh nodemon server -e html,js,scss --ignore public --ignore client",
+    "db:build": "node ./script/seed.js"
   },
   "author": "Fullstack Academy of Code",
   "license": "MIT",
