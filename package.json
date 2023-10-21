@@ -1,5 +1,5 @@
 {
-  "name": "helpdesk",
+  "name": "BioHelpDesk",
   "version": "2.0.0",
   "description": "A HelpDesk System for Bioverse",
   "main": "index.js",
