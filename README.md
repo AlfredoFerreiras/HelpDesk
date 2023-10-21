@@ -9,3 +9,19 @@ Database: PostgreSQL, Sequelize
 Authentication: bcrypt, jsonwebtoken
 Prerequisites
 Node.js v18.16.0 or later
+
+Installation
+1. Clone the repository
+git clone git@github.com:AlfredoFerreiras/HelpDesk.git
+cd helpdesk
+2. Install dependencies
+npm install
+3. Start the server
+npm run start:dev
+
+Attention if are in windows you will have to run npm run build:dev and npm run start-server:windows on two separates terminals.
+
+Acknowledgments
+Special thanks to Bioverse for providing the opportunity and the exercise prompt.
+Daniel: daniel@gobioverse.com
+Shanti: shantibraford@gmail.com
