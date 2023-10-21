@@ -6,8 +6,6 @@ const app = express();
 
 module.exports = app;
 
-const helmet = require("helmet");
-
 app.use(
   helmet({
     contentSecurityPolicy: {
