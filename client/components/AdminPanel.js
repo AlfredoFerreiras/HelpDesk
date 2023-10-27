@@ -44,7 +44,7 @@ const AdminPanel = () => {
         {tickets?.map((ticket) => (
           <Row key={ticket.id} className="ticket">
             <Col>
-              <h3>{ticket.title}</h3>
+              <h3>{ticket.name}</h3>
               <p>Email: {ticket.email}</p>
               <p>Description: {ticket.description}</p>
               <p>Status: {ticket.status}</p>
